@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -16,13 +16,17 @@ img {
 }
 
 body {
-    font: 400 16px/30px $base-font;
-    color: $font-color;
+  font: 400 16px/1.75 $roboto;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 a {
-    text-decoration: underline;
-    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
 }
 
 input {
@@ -35,10 +39,17 @@ table {
 
 .wrapper {
     overflow: hidden;
+    position: relative;
 }
 
 .container {
-    max-width: 1630px;
+    max-width: 1200px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
