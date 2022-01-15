@@ -10,6 +10,16 @@ $(document).ready(function (){
 
 })
 
+//Sticky
+$(window).scroll(function(){
+    const bannerHeight = $('.header').outerHeight();
+    if($(window).scrollTop() >= bannerHeight) {
+        $('.header__wrapper').addClass('sticky');
+    }
+    else {
+        $('.header__wrapper').removeClass('sticky');
+    }
+})
 
 //Anchor links
 // $('a').on('click', function (e) {
@@ -24,3 +34,4 @@ $(document).ready(function (){
 //         })
 //     }
 // })
+
