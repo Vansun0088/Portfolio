@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "bitcoin",
   "version": "1.0.0",
-  "description": "My portfoio",
+  "description": "Bitcoin",
   "main": "src/index.js",
   "scripts": {
     "watch": "webpack --mode development --watch",

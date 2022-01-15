@@ -1,4 +1,4 @@
-# Portfolio Gavrylychev I. K.
+# Bitcoin
 
 ```powershell
 To start build:
